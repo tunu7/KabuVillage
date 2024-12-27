@@ -1,26 +1,44 @@
 import React from 'react';
 
-const attractions = [
-  { name: "Beautiful Waterfalls", description: "Experience the serene beauty of nature.", image: "/path-to-image1.jpg" },
-  { name: "Traditional Homes", description: "Learn about the cultural heritage of Kabu Village.", image: "/path-to-image2.jpg" },
-  { name: "Lush Green Fields", description: "Explore the vast greenery and tranquility.", image: "/path-to-image3.jpg" },
-];
-
 const Attractions = () => {
   return (
-    <section id="attractions" className="py-16 bg-green-100">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center text-green-700 mb-8">Attractions</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {attractions.map((attraction, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
-              <img src={attraction.image} alt={attraction.name} className="w-full h-48 object-cover" />
-              <div className="p-4">
-                <h3 className="text-xl font-bold text-green-700">{attraction.name}</h3>
-                <p className="text-gray-600 mt-2">{attraction.description}</p>
-              </div>
-            </div>
-          ))}
+    <section id="attractions" className="py-16 px-4 md:px-8 lg:px-16">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8">
+        Attractions
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <img
+            src="/images/attraction1.jpg"
+            alt="Attraction 1"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Attraction 1</h3>
+          <p className="text-gray-600">
+            Description of Attraction 1. A serene and beautiful place to visit.
+          </p>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <img
+            src="/images/attraction2.jpg"
+            alt="Attraction 2"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Attraction 2</h3>
+          <p className="text-gray-600">
+            Description of Attraction 2. A serene and beautiful place to visit.
+          </p>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <img
+            src="/images/attraction3.jpg"
+            alt="Attraction 3"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Attraction 3</h3>
+          <p className="text-gray-600">
+            Description of Attraction 3. A serene and beautiful place to visit.
+          </p>
         </div>
       </div>
     </section>

@@ -1,23 +1,45 @@
 import React from 'react';
 
-const accommodations = [
-  { name: "Tent Camping", description: "Stay close to nature with our tent camping options." },
-  { name: "Hut Stays", description: "Enjoy cozy and traditional huts for a comfortable stay." },
-];
-
 const Accommodations = () => {
   return (
-    <section id="accommodations" className="py-16 bg-white">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center text-green-700 mb-8">Accommodations</h2>
-        <ul className="space-y-4">
-          {accommodations.map((accommodation, index) => (
-            <li key={index} className="p-4 bg-green-100 shadow rounded-lg">
-              <h3 className="text-xl font-bold text-green-700">{accommodation.name}</h3>
-              <p className="text-gray-600">{accommodation.description}</p>
-            </li>
-          ))}
-        </ul>
+    <section id="accommodations" className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8">
+        Accommodations
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <img
+            src="/images/accommodation1.jpg"
+            alt="Accommodation 1"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Accommodation 1</h3>
+          <p className="text-gray-600">
+            Comfortable and affordable stay in the heart of the village.
+          </p>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <img
+            src="/images/accommodation2.jpg"
+            alt="Accommodation 2"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Accommodation 2</h3>
+          <p className="text-gray-600">
+            Comfortable and affordable stay in the heart of the village.
+          </p>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <img
+            src="/images/accommodation3.jpg"
+            alt="Accommodation 3"
+            className="w-full h-48 object-cover rounded-md mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Accommodation 3</h3>
+          <p className="text-gray-600">
+            Comfortable and affordable stay in the heart of the village.
+          </p>
+        </div>
       </div>
     </section>
   );

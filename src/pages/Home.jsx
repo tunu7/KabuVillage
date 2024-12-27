@@ -7,13 +7,13 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen px-4 md:px-8 lg:px-16 xl:px-24">
       <Navbar />
       <Hero />
       <Attractions />
       <Accommodations />
       <Footer />
-    </>
+    </div>
   );
 };
 
